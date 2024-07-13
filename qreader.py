@@ -28,9 +28,10 @@ from qrdet import (
     POLYGON_XY,
     QUAD_XY,
     WH,
-    QRDetector,
+    # QRDetector,
     crop_qr,
 )
+from qrdet_openvino import QRDetector
 
 _SHARPEN_KERNEL = np.array(
     ((-1.0, -1.0, -1.0), (-1.0, 9.0, -1.0), (-1.0, -1.0, -1.0)), dtype=np.float32
